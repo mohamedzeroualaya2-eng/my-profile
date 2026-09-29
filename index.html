@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Formulaire d'Informations Personnelles</title>
+</head>
+<body>
+
+    <!-- Main Header -->
+    <h1>Formulaire d'Informations Personnelles</h1>
+    <p>Veuillez remplir toutes vos informations ci-dessous :</p>
+    <hr>
+
+    <!-- Main Form Structure -->
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <!-- Fieldset 1: Informations Personnelles -->
+        <fieldset>
+            <legend>1. Informations Personnelles</legend>
+            <br>
+
+            <!-- Nom Complet -->
+            <label for="fullName">Nom Complet :</label><br>
+            <input type="text" id="fullName" name="fullName" placeholder="Ex: Mohamed Amine" required>
+            <br><br>
+
+            <!-- Date de Naissance -->
+            <label for="dob">Date de Naissance :</label><br>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <!-- Genre -->
+            <label>Sexe :</label><br>
+            <input type="radio" id="homme" name="gender" value="Homme" checked>
+            <label for="homme">Homme</label>
+            <input type="radio" id="femme" name="gender" value="Femme">
+            <label for="femme">Femme</label>
+            <br><br>
+
+            <!-- Photo de Profil -->
+            <label for="photo">Photo de Profil :</label><br>
+            <input type="file" id="photo" name="photo" accept="image/*">
+            <br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Fieldset 2: Coordonnées et Contact -->
+        <fieldset>
+            <legend>2. Coordonnées et Contact</legend>
+            <br>
+
+            <!-- Email -->
+            <label for="email">Adresse E-mail :</label><br>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            <br><br>
+
+            <!-- Téléphone -->
+            <label for="phone">Numéro de Téléphone :</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="0612345678" required>
+            <br><br>
+
+            <!-- Ville -->
+            <label for="city">Ville :</label><br>
+            <select id="city" name="city" required>
+                <option value="">-- Choisissez votre ville --</option>
+                <option value="Casablanca">Casablanca</option>
+                <option value="Rabat">Rabat</option>
+                <option value="Marrakech">Marrakech</option>
+                <option value="Fes">Fès</option>
+                <option value="Tanger">Tanger</option>
+                <option value="Agadir">Agadir</option>
+                <option value="Oujda">Oujda</option>
+                <option value="Meknes">Meknès</option>
+                <option value="Tetouan">Tétouan</option>
+                <option value="Kenitra">Kénitra</option>
+                <option value="Autre">Autre ville</option>
+            </select>
+            <br><br>
+
+            <!-- Adresse -->
+            <label for="address">Adresse Complète :</label><br>
+            <textarea id="address" name="address" rows="3" cols="50" placeholder="Ex: Hay Riad, Rue 12, N 5" required></textarea>
+            <br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Fieldset 3: Profil et Intérêts -->
+        <fieldset>
+            <legend>3. Profil et Intérêts</legend>
+            <br>
+
+            <!-- Niveau d'études -->
+            <label for="education">Niveau d'études :</label><br>
+            <select id="education" name="education">
+                <option value="Niveau Bac">Niveau Bac</option>
+                <option value="Baccalauréat">Baccalauréat</option>
+                <option value="Bac+2">Bac +2 (DUT / BTS / TS)</option>
+                <option value="Licence">Licence (Bac +3)</option>
+                <option value="Master">Master (Bac +5)</option>
+                <option value="Doctorat">Doctorat</option>
+                <option value="Autre">Autre</option>
+            </select>
+            <br><br>
+
+            <!-- Loisirs -->
+            <label>Centres d'intérêt / Loisirs :</label><br>
+            <input type="checkbox" id="sport" name="hobbies" value="Sport">
+            <label for="sport">Sport</label><br>
+
+            <input type="checkbox" id="reading" name="hobbies" value="Lecture">
+            <label for="reading">Lecture</label><br>
+
+            <input type="checkbox" id="travel" name="hobbies" value="Voyage">
+            <label for="travel">Voyage</label><br>
+
+            <input type="checkbox" id="tech" name="hobbies" value="Informatique">
+            <label for="tech">Informatique et Technologie</label>
+            <br><br>
+
+            <!-- Remarques -->
+            <label for="notes">Remarques ou Message :</label><br>
+            <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Ajjoutid ay ma'loumat khorin hna..."></textarea>
+            <br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Submit and Reset Buttons -->
+        <div>
+            <input type="submit" value="Envoyer / Validé">
+            <input type="reset" value="Réinitialiser">
+        </div>
+
+    </form>
+
+</body>
+</html>
