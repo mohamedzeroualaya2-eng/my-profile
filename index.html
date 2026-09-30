@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+ <head>
     <title>Formulaire d'Informations Personnelles</title>
-</head>
-<body>
+ </head>
+ <body>
 
     <!-- Main Header -->
     <h1>Formulaire d'Informations Personnelles</h1>
@@ -11,7 +11,7 @@
     <hr>
 
     <!-- Main Form Structure -->
-    <form action="#" method="post" enctype="multipart/form-data">
+    <form>
 
         <!-- Fieldset 1: Informations Personnelles -->
         <fieldset>
@@ -19,25 +19,25 @@
             <br>
 
             <!-- Nom Complet -->
-            <label for="fullName">Nom Complet :</label><br>
+            Nom Complet :<br>
             <input type="text" id="fullName" name="fullName" placeholder="Ex: Mohamed Amine" required>
             <br><br>
 
             <!-- Date de Naissance -->
-            <label for="dob">Date de Naissance :</label><br>
+            Date de Naissance :<br>
             <input type="date" id="dob" name="dob" required>
             <br><br>
 
             <!-- Genre -->
-            <label>Sexe :</label><br>
-            <input type="radio" id="homme" name="gender" value="Homme" checked>
-            <label for="homme">Homme</label>
+            Sexe :<br>
+            <input type="radio" id="homme" name="gender" value="Homme">
+            Homme 
             <input type="radio" id="femme" name="gender" value="Femme">
-            <label for="femme">Femme</label>
+            Femme
             <br><br>
 
             <!-- Photo de Profil -->
-            <label for="photo">Photo de Profil :</label><br>
+            Photo de Profil :<br>
             <input type="file" id="photo" name="photo" accept="image/*">
             <br><br>
         </fieldset>
@@ -50,17 +50,17 @@
             <br>
 
             <!-- Email -->
-            <label for="email">Adresse E-mail :</label><br>
+            Adresse E-mail :<br>
             <input type="email" id="email" name="email" placeholder="example@mail.com" required>
             <br><br>
 
             <!-- Téléphone -->
-            <label for="phone">Numéro de Téléphone :</label><br>
+            Numéro de Téléphone :<br>
             <input type="tel" id="phone" name="phone" placeholder="0612345678" required>
             <br><br>
 
             <!-- Ville -->
-            <label for="city">Ville :</label><br>
+            Ville :<br>
             <select id="city" name="city" required>
                 <option value="">-- Choisissez votre ville --</option>
                 <option value="Casablanca">Casablanca</option>
@@ -78,7 +78,7 @@
             <br><br>
 
             <!-- Adresse -->
-            <label for="address">Adresse Complète :</label><br>
+            Adresse Complète :<br>
             <textarea id="address" name="address" rows="3" cols="50" placeholder="Ex: Hay Riad, Rue 12, N 5" required></textarea>
             <br><br>
         </fieldset>
@@ -91,7 +91,7 @@
             <br>
 
             <!-- Niveau d'études -->
-            <label for="education">Niveau d'études :</label><br>
+            Niveau d'études :<br>
             <select id="education" name="education">
                 <option value="Niveau Bac">Niveau Bac</option>
                 <option value="Baccalauréat">Baccalauréat</option>
@@ -104,22 +104,22 @@
             <br><br>
 
             <!-- Loisirs -->
-            <label>Centres d'intérêt / Loisirs :</label><br>
+            Centres d'intérêt / Loisirs :<br>
             <input type="checkbox" id="sport" name="hobbies" value="Sport">
-            <label for="sport">Sport</label><br>
+            Sport<br>
 
             <input type="checkbox" id="reading" name="hobbies" value="Lecture">
-            <label for="reading">Lecture</label><br>
+            Lecture<br>
 
             <input type="checkbox" id="travel" name="hobbies" value="Voyage">
-            <label for="travel">Voyage</label><br>
+            Voyage<br>
 
             <input type="checkbox" id="tech" name="hobbies" value="Informatique">
-            <label for="tech">Informatique et Technologie</label>
+            Informatique et Technologie
             <br><br>
 
             <!-- Remarques -->
-            <label for="notes">Remarques ou Message :</label><br>
+            Remarques ou Message :<br>
             <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Ajjoutid ay ma'loumat khorin hna..."></textarea>
             <br><br>
         </fieldset>
@@ -127,12 +127,11 @@
         <br>
 
         <!-- Submit and Reset Buttons -->
-        <div>
-            <input type="submit" value="Envoyer / Validé">
+         
+            <input type="submit" value="Envoyer">
             <input type="reset" value="Réinitialiser">
-        </div>
 
     </form>
 
-</body>
-</html>
+ </body>
+</html> 
